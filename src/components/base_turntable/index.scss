@@ -1,16 +1,47 @@
 .base-turntable-wrapper {
   position: relative;
+
     .turntable-option {
-      width: 342px;
-      height: 342px;
-      text-align: center;
-      border-radius: 10px;
       position: absolute;
-      top: calc(50% - 171px);
-      left: calc(50% - 171px);
-      transform: translate(-50%, -50%);
-      background: #FFFFFF;
-      opacity: 0.3;
-      box-shadow: inset 6px -3px 14px rgba(251, 160, 160, 0.5);
+      top: calc(50% - 165PX);
+      left: 50%;
+      width: 165PX;
+      height: 310PX;
+      border-radius: 0 165PX 165PX 0;
+      transform-origin: left center;
+      display: flex;
+      // background: rgba(255,255,255,0.3);
+      // opacity: 0.3;
+      // box-shadow: inset 6PX -3PX 14PX rgba(251, 160, 160, 0.2);
+  //     position: absolute;
+  //     top: 0PX;
+  //     left: 0;
+  // width: 100%;
+  // height: 100%;
+  // border-radius: 50%;
+  // clip-path: polygon(50% 50%, 100% 0, 100% 100%);
+      &.bg{
+        background: rgba(255,255,255,0.3);
+        transform-origin: center;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+      }
+      .option-title{
+        position: absolute;
+        display: flex;
+        top: 38PX;
+        left: 30PX;
+        transform: rotate(28deg);
+        font-weight: 500;
+        font-size: 16PX;
+        line-height: 24PX;
+        text-align: center;
+        color: #AF3979;
+      }
     }
-}
+    .turntable-btn{
+      position: absolute;
+      top: calc(50% - 46PX);
+      left: calc(50% - 46PX);
+      z-index: 999;
+    }
+  }

@@ -6,5 +6,5 @@ export default defineAppConfig({
     navigationBarTitleText: 'WeChat',
     navigationBarTextStyle: 'black',
   },
-  components: ['components/base_turntable/index'],
+  components: ['components/base_turntable/index', 'components/base_button/index'],
 })
